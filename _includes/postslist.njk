@@ -1,0 +1,17 @@
+<!-- 
+https://codingthesmartway.com/building-a-blog-with-eleventy-and-netlify-cms-part-2-adding-blog-posts/
+Got to 21  
+-->
+<ul>
+     {% for post in postslist %}
+        <li>
+            <strong>
+                <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+            </strong>
+            -
+            <span>
+                {{ post.data.description }}
+            </span>
+        </li>
+     {% endfor %}
+</ul>
