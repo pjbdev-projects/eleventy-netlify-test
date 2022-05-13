@@ -1,1 +1,11 @@
 // https://codingthesmartway.com/building-a-blog-with-eleventy-and-netlify-cms-part-3-managing-blog-content-with-netlify-cms/
+
+
+
+echo "# eleventy-netlify-test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/pjbdev-projects/eleventy-netlify-test.git
+git push -u origin main
